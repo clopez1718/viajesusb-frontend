@@ -1,0 +1,53 @@
+
+<h1>Listado de destinos</h1>
+<mat-divider></mat-divider>
+<br>
+
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
+
+    <div fxFlex="20" 
+            *ngFor="let destino of destinos" 
+            fxFlex.xs="10"
+            fxFlex.lg="15"
+            fxFlex.sm="20">
+            
+        <mat-card>
+            <mat-card-header>
+                Nombre destino
+            </mat-card-header>
+            <mat-card-subtitle>
+                Codigo destino
+            </mat-card-subtitle>
+        
+            <img mat-card-image src="../../../../assets/images/san-andres.png">
+        
+            <mat-card-content>
+        
+                <h3>Tipo destino: TIPO DE DESTINO</h3>
+        
+                <p>
+                    <strong>Acceso por aire? </strong> SI
+                </p>
+                <p>
+                    <strong>Acceso por mar? </strong> SI
+                </p>
+                <p>
+                    <strong>Acceso por tierra? </strong> NO
+                </p>
+        
+            </mat-card-content>
+        
+            <mat-card-actions>
+                <button mat-button color="warn">
+                    Eliminar
+                </button>
+                <button mat-button color="primary"> 
+                    Editar
+                </button>
+            </mat-card-actions>
+        
+        </mat-card>
+        
+    </div>
+</div>
+
